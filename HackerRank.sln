@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EFEC8BD4-CC43-44B5-97A4-F3081B2B225E}"
+	ProjectSection(SolutionItems) = preProject
+		Empty.cs = Empty.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice", "Practice", "{CA4DD320-B7ED-4BE0-A8DC-FAEF57F709F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compete", "Compete", "{96B72E5A-2D4F-4B6F-8CC8-17C4C09272CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hack the Interview V (Asia Pacific)", "Compete\Hack the Interview V (Asia Pacific)\Hack the Interview V (Asia Pacific).csproj", "{D03C1A3A-B1F4-4186-A251-D38F134293C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "Practice\Algorithms\Algorithms.csproj", "{871706BC-A4E2-43CF-BFE9-0D08C22263F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mathematics", "Practice\Mathematics\Mathematics.csproj", "{5D5958CE-F12C-49EF-A134-32D727FEEDE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack the Interview IV (U.S.)", "Compete\Hack the Interview IV (U.S.)\Hack the Interview IV (U.S.).csproj", "{A2E25530-31B7-4072-94FD-D53D832EBAA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D03C1A3A-B1F4-4186-A251-D38F134293C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03C1A3A-B1F4-4186-A251-D38F134293C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03C1A3A-B1F4-4186-A251-D38F134293C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03C1A3A-B1F4-4186-A251-D38F134293C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871706BC-A4E2-43CF-BFE9-0D08C22263F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871706BC-A4E2-43CF-BFE9-0D08C22263F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871706BC-A4E2-43CF-BFE9-0D08C22263F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871706BC-A4E2-43CF-BFE9-0D08C22263F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D5958CE-F12C-49EF-A134-32D727FEEDE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D5958CE-F12C-49EF-A134-32D727FEEDE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D5958CE-F12C-49EF-A134-32D727FEEDE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D5958CE-F12C-49EF-A134-32D727FEEDE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E25530-31B7-4072-94FD-D53D832EBAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E25530-31B7-4072-94FD-D53D832EBAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E25530-31B7-4072-94FD-D53D832EBAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E25530-31B7-4072-94FD-D53D832EBAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D03C1A3A-B1F4-4186-A251-D38F134293C1} = {96B72E5A-2D4F-4B6F-8CC8-17C4C09272CE}
+		{871706BC-A4E2-43CF-BFE9-0D08C22263F1} = {CA4DD320-B7ED-4BE0-A8DC-FAEF57F709F5}
+		{5D5958CE-F12C-49EF-A134-32D727FEEDE6} = {CA4DD320-B7ED-4BE0-A8DC-FAEF57F709F5}
+		{A2E25530-31B7-4072-94FD-D53D832EBAA0} = {96B72E5A-2D4F-4B6F-8CC8-17C4C09272CE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB7F5DB1-5C73-4A40-9AB1-1BE49BD12202}
+	EndGlobalSection
+EndGlobal
