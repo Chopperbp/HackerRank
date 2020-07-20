@@ -18,7 +18,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "Practice\Algo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mathematics", "Practice\Mathematics\Mathematics.csproj", "{5D5958CE-F12C-49EF-A134-32D727FEEDE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack the Interview IV (U.S.)", "Compete\Hack the Interview IV (U.S.)\Hack the Interview IV (U.S.).csproj", "{A2E25530-31B7-4072-94FD-D53D832EBAA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hack the Interview IV (U.S.)", "Compete\Hack the Interview IV (U.S.)\Hack the Interview IV (U.S.).csproj", "{A2E25530-31B7-4072-94FD-D53D832EBAA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{1D5A5AAA-8E85-4FA9-BE14-82C0CB0A39CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Utils\Common\Common.csproj", "{B896B458-EF8B-445C-A5EF-DDFB27350DA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +46,10 @@ Global
 		{A2E25530-31B7-4072-94FD-D53D832EBAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2E25530-31B7-4072-94FD-D53D832EBAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2E25530-31B7-4072-94FD-D53D832EBAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B896B458-EF8B-445C-A5EF-DDFB27350DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B896B458-EF8B-445C-A5EF-DDFB27350DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B896B458-EF8B-445C-A5EF-DDFB27350DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B896B458-EF8B-445C-A5EF-DDFB27350DA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +59,7 @@ Global
 		{871706BC-A4E2-43CF-BFE9-0D08C22263F1} = {CA4DD320-B7ED-4BE0-A8DC-FAEF57F709F5}
 		{5D5958CE-F12C-49EF-A134-32D727FEEDE6} = {CA4DD320-B7ED-4BE0-A8DC-FAEF57F709F5}
 		{A2E25530-31B7-4072-94FD-D53D832EBAA0} = {96B72E5A-2D4F-4B6F-8CC8-17C4C09272CE}
+		{B896B458-EF8B-445C-A5EF-DDFB27350DA4} = {1D5A5AAA-8E85-4FA9-BE14-82C0CB0A39CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB7F5DB1-5C73-4A40-9AB1-1BE49BD12202}
