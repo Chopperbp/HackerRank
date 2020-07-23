@@ -16,7 +16,7 @@ namespace Common
         public void TestCombinationFromIndex(char[] arr, int k, int ind, char[] expected)
         {
             Assert.Equal(expected, Common.CombinationFromIndex<char>(arr, k, ind));
-          
+
         }
         [Fact]
         public void CombinationFromIndexAll()
@@ -24,13 +24,39 @@ namespace Common
             var result = new List<string>();
             for (int i = 0; i < 15; i++)
             {
-                result.Add(new string (Common.CombinationFromIndex<char>(new char[] { 'a', 'b', 'c','d','e', 'f' }, 4, i)));
+                result.Add(new string(Common.CombinationFromIndex<char>(new char[] { 'a', 'b', 'c', 'd', 'e', 'f' }, 4, i)));
             }
         }
         [Fact]
         public void CombinationsRosettaWoRecursion()
         {
             var result = Common.CombinationsRosettaWoRecursion(2, 5).ToList();
+        }
+
+        [Theory]
+        [InlineData(new int[] { 630, 252, 2205 }, 63)]
+        public void GCDTest(int[] actual, int expected)
+        {
+            Assert.Equal(expected, Common.GCD(actual));
+        }
+        [Theory]
+        [InlineData(new int[] { 630, 252, 2205 }, 63)]
+        public void GCFTest(int[] actual, int expected)
+        {
+            Assert.Equal(expected, Common.GCF(actual));
+        }
+        [Theory]
+        [InlineData(new int[] { 63, 105, 252 }, 1260)]
+        public void LCMTest(int[] actual, int expected)
+        {
+            Assert.Equal(expected, Common.LCM(actual));
+        }
+
+        [Theory]
+        [InlineData(new int[] { 63, 105, 252 }, 1260)]
+        public void LeastCommonMultipleTest(int[] actual, int expected)
+        {
+            Assert.Equal(expected, Common.LeastCommonMultiple(actual));
         }
     }
 }

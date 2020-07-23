@@ -117,5 +117,63 @@ namespace Common
             }
             return a / b;
         }
+        //Least Common Multiple
+        public static int LCM(int a, int b)
+        {
+            return a * b / GCD(a, b);
+        }
+        public static int LCM(int[] numbers)
+        {
+            return numbers.Aggregate(LCM);
+        }
+
+        public static int LeastCommonMultiple(int[] numbers)
+        {
+            return numbers.Aggregate(LeastCommonMultiple);
+        }
+        public static int LeastCommonMultiple(int a, int b)
+        {
+            (a, b) = a > b ? (a, b) : (b, a);
+            for (int i = 1; i < b; i++)
+            {
+                if ((a * i) % b == 0)
+                {
+                    return i * a;
+                }
+            }
+            return a * b;
+        }
+        //Greatest Common Divisor
+        //Greatest Common Factor
+        public static int GCD(int[] numbers)
+        {
+            return numbers.Aggregate(GCD);
+        }
+        public static int GCD(int a, int b)
+        {
+            while (a != 0 && b != 0)
+            {
+                if (a > b)
+                    a %= b;
+                else
+                    b %= a;
+            }
+            return a == 0 ? b : a;
+        }
+
+        public static int GCF(int a, int b)
+        {
+            while (b != 0)
+            {
+                int temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return a;
+        }
+        public static int GCF(int[] numbers)
+        {
+            return numbers.Aggregate(GCF);
+        }
     }
 }
