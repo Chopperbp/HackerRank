@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
+using System.Threading;
 
 namespace Common
 {
@@ -118,23 +119,23 @@ namespace Common
             return a / b;
         }
         //Least Common Multiple
-        public static int LCM(int a, int b)
+        public static long LCM(long a, int b)
         {
             return a * b / GCD(a, b);
         }
-        public static int LCM(int[] numbers)
+        public static long LCM(int[] numbers)
         {
-            return numbers.Aggregate(LCM);
+            return numbers.Aggregate((long)numbers[0], (acc, next) => LCM(acc, next));
         }
 
-        public static int LeastCommonMultiple(int[] numbers)
+        public static long LeastCommonMultiple(int[] numbers)
         {
-            return numbers.Aggregate(LeastCommonMultiple);
+            return numbers.Aggregate((long)numbers[0], (acc, next) => LeastCommonMultiple(acc, next));
         }
-        public static int LeastCommonMultiple(int a, int b)
+        public static long LeastCommonMultiple(long a, long b)
         {
             (a, b) = a > b ? (a, b) : (b, a);
-            for (int i = 1; i < b; i++)
+            for (long i = 1; i < b; i++)
             {
                 if ((a * i) % b == 0)
                 {
@@ -145,11 +146,11 @@ namespace Common
         }
         //Greatest Common Divisor
         //Greatest Common Factor
-        public static int GCD(int[] numbers)
+        public static long GCD(int[] numbers)
         {
-            return numbers.Aggregate(GCD);
+            return numbers.Aggregate((long)0, (acc, next) => GCD(acc, next));
         }
-        public static int GCD(int a, int b)
+        public static long GCD(long a, long b)
         {
             while (a != 0 && b != 0)
             {

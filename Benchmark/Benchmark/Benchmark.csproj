@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DailyInterviewPro\DailyInterviewPro.csproj" />
+    <ProjectReference Include="..\..\HackerRank\Compete\Hack the Interview IV (U.S.)\Hack the Interview IV (U.S.).csproj" />
+    <ProjectReference Include="..\..\HackerRank\Compete\Hack the Interview V (Asia Pacific)\Hack the Interview V (Asia Pacific).csproj" />
+    <ProjectReference Include="..\..\HackerRank\Practice\Algorithms\Algorithms.csproj" />
+    <ProjectReference Include="..\..\HackerRank\Practice\Mathematics\Mathematics.csproj" />
+    <ProjectReference Include="..\..\HackerRank\Utils\Common\Common.csproj" />
+  </ItemGroup>
+
+</Project>
